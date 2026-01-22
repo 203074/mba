@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>MBA | عطور ومكياج فاخر</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MBA | عطور ومكياج فاخر</title>
 
-  <!-- SEO -->
-  <meta name="description" content="MBA متجر عطور ومكياج فاخر، عطور رجالية ونسائية، الدفع عند الاستلام">
-  <meta name="keywords" content="عطور, مكياج, عطور رجالية, عطور نسائية, MBA">
-  <meta name="author" content="MBA">
+<meta name="description" content="MBA متجر عطور ومكياج فاخر، الدفع عند الاستلام">
+<meta name="keywords" content="عطور، مكياج، عطور رجالية، عطور نسائية">
+<meta property="og:title" content="MBA Perfumes">
+<meta property="og:description" content="عطور ومكياج فاخر">
+<meta property="og:image" content="logo.png">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="MBA Perfumes">
-  <meta property="og:description" content="عطور ومكياج فاخر – اطلب الآن">
-  <meta property="og:image" content="logo.png">
-  <meta property="og:type" content="website">
-
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-<!-- ===== NAVBAR ===== -->
+<!-- NAVBAR -->
 <nav class="navbar">
   <div class="nav-container">
     <div class="nav-logo">MBA</div>
@@ -34,99 +28,104 @@
       <li><a href="#women">عطور نسائية</a></li>
       <li><a href="#makeup-women">مكياج نسائي</a></li>
       <li><a href="#makeup-men">مستحضرات رجالية</a></li>
-      <li><a href="#order">تواصل معنا</a></li>
+      <li><a href="#order">اطلب الآن</a></li>
     </ul>
 
     <div class="menu-toggle" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </div>
 </nav>
 
-<!-- ===== HERO ===== -->
+<!-- HERO -->
 <header class="hero animate">
   <img src="logo.png" class="logo">
   <h1>MBA</h1>
   <p>Luxury Perfumes & Cosmetics</p>
 </header>
 
-<!-- ===== PRODUCTS TEMPLATE ===== -->
+<!-- MEN -->
 <section id="men" class="products animate">
-  <h2>عطور رجالية</h2>
-
-  <!-- انسخ هذا البلوك لإضافة أي منتج -->
-  <div class="product-card">
-    <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f">
-    <h3>Black Oud</h3>
-    <button onclick="selectProduct('Black Oud')">اطلب الآن</button>
-  </div>
-
-  <div class="product-card">
-    <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6">
-    <h3>Luxury Musk</h3>
-    <button onclick="selectProduct('Luxury Musk')">اطلب الآن</button>
-  </div>
+<h2>عطور رجالية</h2>
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1594035910387-fea47794261f">
+<h3>Black Oud</h3>
+<p>رائحة شرقية فاخرة</p>
+<button onclick="selectProduct('Black Oud')">اطلب الآن</button>
+</div>
 </section>
 
+<!-- WOMEN -->
 <section id="women" class="products animate">
-  <h2>عطور نسائية</h2>
-
-  <div class="product-card">
-    <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de">
-    <h3>Elegant Rose</h3>
-    <button onclick="selectProduct('Elegant Rose')">اطلب الآن</button>
-  </div>
+<h2>عطور نسائية</h2>
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de">
+<h3>Elegant Rose</h3>
+<p>أنوثة وثبات</p>
+<button onclick="selectProduct('Elegant Rose')">اطلب الآن</button>
+</div>
 </section>
 
+<!-- MAKEUP WOMEN -->
 <section id="makeup-women" class="products animate">
-  <h2>مستحضرات تجميل نسائية</h2>
-
-  <div class="product-card">
-    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
-    <h3>Makeup Set</h3>
-    <button onclick="selectProduct('Makeup Set')">اطلب الآن</button>
-  </div>
+<h2>مكياج نسائي</h2>
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+<h3>Makeup Set</h3>
+<p>طقم كامل</p>
+<button onclick="selectProduct('Makeup Set')">اطلب الآن</button>
+</div>
 </section>
 
+<!-- MEN CARE -->
 <section id="makeup-men" class="products animate">
-  <h2>مستحضرات رجالية</h2>
-
-  <div class="product-card">
-    <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1c2">
-    <h3>Men Care Kit</h3>
-    <button onclick="selectProduct('Men Care Kit')">اطلب الآن</button>
-  </div>
+<h2>مستحضرات رجالية</h2>
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6">
+<h3>Men Care Kit</h3>
+<p>عناية متكاملة</p>
+<button onclick="selectProduct('Men Care Kit')">اطلب الآن</button>
+</div>
 </section>
 
-<!-- ===== ORDER ===== -->
+<!-- ORDER -->
 <section id="order" class="order animate">
-  <h2>طلب المنتج</h2>
-
-  <form action="https://formspree.io/f/maqqggzo" method="POST">
-    <input type="text" name="name" placeholder="الاسم الكامل" required>
-    <input type="tel" name="phone" placeholder="رقم الجوال" required>
-    <input type="text" name="city" placeholder="المدينة" required>
-    <input type="text" name="address" placeholder="العنوان الكامل للتوصيل" required>
-    <input type="text" id="product" name="product" placeholder="اسم المنتج" required>
-    <input type="number" name="quantity" value="1" min="1">
-    <button type="submit">إرسال الطلب</button>
-  </form>
+<h2>طلب المنتج</h2>
+<form action="https://formspree.io/f/maqqggzo" method="POST">
+<input type="text" name="name" placeholder="الاسم الكامل" required>
+<input type="tel" name="phone" placeholder="رقم الجوال" required>
+<input type="text" name="city" placeholder="المدينة" required>
+<input type="text" name="address" placeholder="العنوان الكامل للتوصيل" required>
+<input type="text" id="product" name="product" placeholder="اسم المنتج" required>
+<input type="number" name="quantity" value="1" min="1">
+<button type="submit">إرسال الطلب</button>
+</form>
 </section>
 
-<!-- ===== WHATSAPP FLOAT ===== -->
+<!-- WHATSAPP -->
 <a href="https://wa.me/9647714773352" class="whatsapp-float" target="_blank">
-  <i class="fab fa-whatsapp"></i>
+<i class="fab fa-whatsapp"></i>
 </a>
 
-<!-- ===== FOOTER ===== -->
 <footer>
-  <div class="social">
-    <a href="https://www.instagram.com/mba1222026/" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.tiktok.com/@mba20260" target="_blank"><i class="fab fa-tiktok"></i></a>
-  </div>
-  <p>© 2026 MBA</p>
+<p>© 2026 MBA</p>
+<div class="social">
+<a href="https://www.instagram.com/mba1222026/" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@mba20260" target="_blank"><i class="fab fa-tiktok"></i></a>
+</div>
 </footer>
 
-<script src="script.js"></script>
+<script>
+function toggleMenu(){
+document.getElementById("navLinks").classList.toggle("show");
+}
+function selectProduct(name){
+document.getElementById("product").value = name;
+location.href="#order";
+}
+</script>
+
 </body>
 </html>
