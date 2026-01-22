@@ -1,5 +1,8 @@
-<div class="product-card">
-  <img src="رابط-الصورة">
-  <h3>اسم المنتج</h3>
-  <button onclick="selectProduct('اسم المنتج')">اطلب الآن</button>
-</div>
+function selectProduct(name) {
+  document.getElementById("product").value = name;
+  document.getElementById("order").scrollIntoView({ behavior: "smooth" });
+}
+
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("show");
+}
