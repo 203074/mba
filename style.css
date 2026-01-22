@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Tajawal", sans-serif;
@@ -6,6 +10,7 @@ body {
   text-align: center;
 }
 
+/* ===== Hero ===== */
 .hero {
   padding: 80px 20px;
 }
@@ -17,7 +22,6 @@ body {
 
 h1 {
   font-size: 48px;
-  margin: 10px 0;
 }
 
 p {
@@ -26,8 +30,8 @@ p {
 
 .btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 30px;
+  margin-top: 25px;
+  padding: 12px 35px;
   background: linear-gradient(135deg, #d4af37, #f5d27a);
   color: #000;
   text-decoration: none;
@@ -35,22 +39,33 @@ p {
   font-weight: bold;
 }
 
+/* ===== Products ===== */
 .products {
   padding: 60px 20px;
+}
+
+.products h2 {
+  margin-bottom: 40px;
 }
 
 .product-card {
   background: #111;
   border: 1px solid #d4af37;
-  margin: 20px auto;
-  max-width: 320px;
-  padding: 25px;
   border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
 }
 
 .product-card button {
   margin-top: 15px;
-  padding: 10px 25px;
+  padding: 10px 30px;
   border: none;
   border-radius: 25px;
   background: #d4af37;
@@ -58,16 +73,21 @@ p {
   font-weight: bold;
 }
 
+/* ===== Order ===== */
 .order {
   padding: 60px 20px;
 }
 
 form {
-  max-width: 400px;
+  max-width: 420px;
   margin: auto;
+  background: #111;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid #d4af37;
 }
 
-input, textarea {
+input {
   width: 100%;
   margin: 10px 0;
   padding: 12px;
@@ -78,6 +98,7 @@ input, textarea {
 button {
   width: 100%;
   padding: 14px;
+  margin-top: 10px;
   background: #d4af37;
   border: none;
   border-radius: 30px;
@@ -92,8 +113,18 @@ button {
   font-weight: bold;
 }
 
+/* ===== Footer ===== */
 footer {
   padding: 20px;
-  background: #000;
   color: #777;
+}
+
+/* ===== Responsive ===== */
+@media (min-width: 768px) {
+  .products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
 }
