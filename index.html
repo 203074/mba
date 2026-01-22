@@ -21,17 +21,23 @@
 
 <!-- ===== NAVBAR ===== -->
 <nav class="navbar">
-  <div class="nav-logo">MBA</div>
+  <div class="nav-container">
+    <div class="nav-logo">MBA</div>
 
-  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#men">عطور رجالية</a></li>
+      <li><a href="#women">عطور نسائية</a></li>
+      <li><a href="#makeup-women">مكياج نسائي</a></li>
+      <li><a href="#makeup-men">مستحضرات رجالية</a></li>
+      <li><a href="#order">تواصل معنا</a></li>
+    </ul>
 
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#men">عطور رجالية</a></li>
-    <li><a href="#women">عطور نسائية</a></li>
-    <li><a href="#makeup-women">مكياج نسائي</a></li>
-    <li><a href="#makeup-men">مستحضرات رجالية</a></li>
-    <li><a href="#contact">تواصل معنا</a></li>
-  </ul>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
 </nav>
 
 <!-- ===== HERO ===== -->
@@ -92,17 +98,16 @@
 </section>
 
 <!-- ===== ORDER ===== -->
-<section id="contact" class="order">
+<section id="order" class="order">
   <h2>طلب المنتج</h2>
 
   <form action="https://formspree.io/f/maqqggzo" method="POST">
     <input type="text" name="name" placeholder="الاسم الكامل" required>
     <input type="tel" name="phone" placeholder="رقم الجوال" required>
     <input type="text" name="city" placeholder="المدينة" required>
-    <input type="text" name="address" placeholder="العنوان الكامل" required>
+    <input type="text" name="address" placeholder="العنوان الكامل للتوصيل" required>
     <input type="text" id="product" name="product" placeholder="اسم المنتج" required>
     <input type="number" name="quantity" value="1" min="1">
-
     <button type="submit">إرسال الطلب</button>
   </form>
 </section>
