@@ -7,10 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO -->
-  <meta name="description" content="MBA – عطور ومكياج فاخر، اطلب الآن والدفع عند الاستلام">
+  <meta name="description" content="MBA متجر عطور ومكياج فاخر، عطور رجالية ونسائية، الدفع عند الاستلام">
+  <meta name="keywords" content="عطور, مكياج, عطور رجالية, عطور نسائية, MBA">
+  <meta name="author" content="MBA">
+
+  <!-- Open Graph -->
   <meta property="og:title" content="MBA Perfumes">
   <meta property="og:description" content="عطور ومكياج فاخر – اطلب الآن">
   <meta property="og:image" content="logo.png">
+  <meta property="og:type" content="website">
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -33,24 +38,23 @@
     </ul>
 
     <div class="menu-toggle" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </div>
   </div>
 </nav>
 
 <!-- ===== HERO ===== -->
-<header class="hero">
+<header class="hero animate">
   <img src="logo.png" class="logo">
   <h1>MBA</h1>
   <p>Luxury Perfumes & Cosmetics</p>
 </header>
 
-<!-- ===== MEN PERFUMES ===== -->
-<section id="men" class="products">
+<!-- ===== PRODUCTS TEMPLATE ===== -->
+<section id="men" class="products animate">
   <h2>عطور رجالية</h2>
 
+  <!-- انسخ هذا البلوك لإضافة أي منتج -->
   <div class="product-card">
     <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f">
     <h3>Black Oud</h3>
@@ -64,8 +68,7 @@
   </div>
 </section>
 
-<!-- ===== WOMEN PERFUMES ===== -->
-<section id="women" class="products">
+<section id="women" class="products animate">
   <h2>عطور نسائية</h2>
 
   <div class="product-card">
@@ -75,8 +78,7 @@
   </div>
 </section>
 
-<!-- ===== WOMEN MAKEUP ===== -->
-<section id="makeup-women" class="products">
+<section id="makeup-women" class="products animate">
   <h2>مستحضرات تجميل نسائية</h2>
 
   <div class="product-card">
@@ -86,8 +88,7 @@
   </div>
 </section>
 
-<!-- ===== MEN CARE ===== -->
-<section id="makeup-men" class="products">
+<section id="makeup-men" class="products animate">
   <h2>مستحضرات رجالية</h2>
 
   <div class="product-card">
@@ -98,7 +99,7 @@
 </section>
 
 <!-- ===== ORDER ===== -->
-<section id="order" class="order">
+<section id="order" class="order animate">
   <h2>طلب المنتج</h2>
 
   <form action="https://formspree.io/f/maqqggzo" method="POST">
@@ -111,6 +112,11 @@
     <button type="submit">إرسال الطلب</button>
   </form>
 </section>
+
+<!-- ===== WHATSAPP FLOAT ===== -->
+<a href="https://wa.me/9647714773352" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
 <!-- ===== FOOTER ===== -->
 <footer>
